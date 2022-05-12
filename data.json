@@ -1,0 +1,41 @@
+{
+    "categories": [
+        {
+            "title": "oeufs",
+            "type": [
+                {
+                    "title": "dure",
+                    "desc": "zadzadzad",
+                    "taches": [
+                        {
+                            "titre": "test",
+                            "desc": "test",
+                            "duree": 60
+                        },
+                        {
+                            "titre": "test",
+                            "desc": "test",
+                            "duree": 60
+                        }
+                    ]
+                },
+                {
+                    "title": "A la coque",
+                    "desc": "zadzadzad",
+                    "taches": [
+                        {
+                            "titre": "test",
+                            "desc": "test",
+                            "duree": 60
+                        },
+                        {
+                            "titre": "test",
+                            "desc": "test",
+                            "duree": 60
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
