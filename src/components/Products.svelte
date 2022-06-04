@@ -1,40 +1,26 @@
 <script>
+    import { link } from "svelte-routing";
+    import json from '../../data.json';
+    let list = JSON.parse(JSON.stringify(json));
+    const types = [];
+    for(const category of list.categories){
+        types.push({ name : category.title, url : "/products/" + category.title});
+    }
 </script>
 
-<main>
-    <div class="products">
-        <div>
-            <div id="product-egg">
-                <p class="productTitle">Eggs</p>
-            </div>
 
-            <div id="product-tea">
-                <p class="productTitle">Tea</p>
-            </div>
-        </div>
+<div class="products">
+    <div>
+        <p> Produits </p>
+        {#each types as type}
+        <a use:link href={type.url}> 
+            {type.name}
+        </a>
+        {/each} 
     </div>
-</main>
+</div>
+
 
 <style>
-
-    #product-egg, #product-tea {
-        border-radius: 20px;
-        padding: 4px 24px;
-        margin: auto;
-        width: fit-content;
-    }
-
-    .productTitle {
-        font-weight: bold;
-    }
-
-    #product-egg{
-        background-color: #fbe1b5;
-        margin-bottom: 20px;
-    }
-
-    #product-tea{
-        background-color: #d4edd3;
-    }
 
 </style>
