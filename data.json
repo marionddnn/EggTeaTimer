@@ -5,35 +5,120 @@
             "type": [
                 {
                     "title": "dure",
-                    "desc": "zadzadzad",
+                    "comment": "zadzadzad",
                     "taches": [
                         {
                             "titre": "test",
-                            "desc": "test",
+                            "comment": "test",
                             "duree": 60
                         },
                         {
                             "titre": "test",
-                            "desc": "test",
+                            "comment": "test",
                             "duree": 60
                         }
                     ]
                 },
                 {
                     "title": "A la coque",
-                    "desc": "zadzadzad",
+                    "comment": "zadzadzad",
                     "taches": [
                         {
                             "titre": "test",
-                            "desc": "test",
+                            "comment": "test",
                             "duree": 60
                         },
                         {
                             "titre": "test",
-                            "desc": "test",
+                            "comment": "test",
                             "duree": 60
                         }
                     ]
+                },
+                {
+                    "title": "thé noir",
+                    "comment" : "Le thé noir est un thé vert qui a été oxydé, il est donc plus chargé en théine. Son temps d'infusion est plutôt court.",
+                    "taches": [
+                        {
+                        "titre": "ajouter de l'eau",
+                        "comment" : "ajouter de l'eau dans la casserole et laisser bouillir à feu fort",
+                        "duree" : 2880
+                        },
+                        {
+                            "titre" : "laisser infuser",
+                            "comment" : "éteigner le feu sous la casserole, ajouter le sachet et laisser infuser",
+                            "duree" : 240,
+                            "température" : 70
+                        }
+                    ]
+                },
+                {
+                    "title": "thé vert",
+                    "comment" : "Le thé vert est un thé non-oxydé, il possède certains bienfaits pour la santé. Son temps d'infusion est court.",
+                    "taches": [
+                        {
+                        "titre": "ajouter de l'eau",
+                        "comment" : "ajouter de l'eau dans la casserole et laisser bouillir à feu fort",
+                        "duree" : 2880
+                        },
+                        {
+                            "titre" : "laisser infuser",
+                            "comment" : "éteigner le feu sous la casserole, ajouter le sachet et laisser infuser",
+                            "duree" : 180,
+                            "température" : [90, 95]
+                        }
+                    ]
+                },
+                {
+                    "title": "thé blanc",
+                    "comment" : "Le thé blanc est un thé légérement oxydé (environ 12% d'oxydation), il est généralement vendu assez cher et réputé pour ses vertus diététiques. Son temps d'infusion est long.",
+                    "taches": [
+                        {
+                        "titre": "ajouter de l'eau",
+                        "comment" : "ajouter de l'eau dans la casserole et laisser bouillir à feu fort",
+                        "duree" : 2880
+                        },
+                        {
+                            "titre" : "laisser infuser",
+                            "comment" : "éteigner le feu sous la casserole, ajouter le sachet et laisser infuser",
+                            "duree" : [420, 1200],
+                            "température" : 85
+                        }
+                    ]
+                },
+                {
+                    "title": "Rooibos",
+                    "comment" : "Le rooibos est un thé d'Afrique du Sud qui ne contient pas de théine, il est réputé pour ses vertus sur la digestion, le sommeil, les allergies. Son temps d'infusion est moyen.",
+                    "taches": [
+                        {
+                        "titre": "ajouter de l'eau",
+                        "comment" : "ajouter de l'eau dans la casserole et laisser bouillir à feu fort",
+                        "duree" : 2880
+                        },
+                        {
+                            "titre" : "laisser infuser",
+                            "comment" : "éteigner le feu sous la casserole, ajouter le sachet et laisser infuser",
+                            "duree" : 300,
+                            "température" : [90, 95]
+                        }
+                    ] 
+                },
+                {
+                    "title": "Oolong",
+                    "comment" : "Le thé oolong est un thé dont l'oxydation est incomplète mais varie selon les thés (de 10 à 80% d'oxydation), il se situe donc entre le thé noir et le thé vert. Son temps d'infusion est moyen.",
+                    "taches": [
+                        {
+                        "titre": "ajouter de l'eau",
+                        "comment" : "ajouter de l'eau dans la casserole et laisser bouillir à feu fort",
+                        "duree" : 2880
+                        },
+                        {
+                            "titre" : "laisser infuser",
+                            "comment" : "éteigner le feu sous la casserole, ajouter le sachet et laisser infuser",
+                            "duree" : [300, 420],
+                            "température" : 85
+                        }
+                    ] 
                 }
             ]
         }
