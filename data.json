@@ -1,86 +1,54 @@
 {
     "categories": [
         {
-            "title": "oeufs",
+            "title": "Tea",
             "type": [
                 {
-                    "title": "dure",
-                    "comment": "zadzadzad",
-                    "taches": [
+                    "title": "Black tea",
+                    "comment" : "Black tea is green tea that has been oxidized, therefore he contains more theine. His steeping time is quite short.",
+                    "tasks": [
                         {
-                            "titre": "test",
-                            "comment": "test",
-                            "duree": 60
+                            "titre": "Add water",
+                            "comment" : "Add water in a pot and let it boil over high heat",
+                            "duree" : 2880
                         },
                         {
-                            "titre": "test",
-                            "comment": "test",
-                            "duree": 60
-                        }
-                    ]
-                },
-                {
-                    "title": "A la coque",
-                    "comment": "zadzadzad",
-                    "taches": [
-                        {
-                            "titre": "test",
-                            "comment": "test",
-                            "duree": 60
-                        },
-                        {
-                            "titre": "test",
-                            "comment": "test",
-                            "duree": 60
-                        }
-                    ]
-                },
-                {
-                    "title": "thé noir",
-                    "comment" : "Le thé noir est un thé vert qui a été oxydé, il est donc plus chargé en théine. Son temps d'infusion est plutôt court.",
-                    "taches": [
-                        {
-                        "titre": "ajouter de l'eau",
-                        "comment" : "ajouter de l'eau dans la casserole et laisser bouillir à feu fort",
-                        "duree" : 2880
-                        },
-                        {
-                            "titre" : "laisser infuser",
-                            "comment" : "éteigner le feu sous la casserole, ajouter le sachet et laisser infuser",
+                            "titre" : "Let it infuse",
+                            "comment" : "Turn off the heat of the pot, then put the tea bag inside it and let it infuse on its own",
                             "duree" : 240,
                             "température" : 70
                         }
                     ]
                 },
                 {
-                    "title": "thé vert",
-                    "comment" : "Le thé vert est un thé non-oxydé, il possède certains bienfaits pour la santé. Son temps d'infusion est court.",
-                    "taches": [
+                    "title": "Green tea",
+                    "comment" : "Green tea is a tea that haven't been oxidized. He got some health benefits and his steeping time is quite short.",
+                    "tasks": [
                         {
-                        "titre": "ajouter de l'eau",
-                        "comment" : "ajouter de l'eau dans la casserole et laisser bouillir à feu fort",
-                        "duree" : 2880
+                            "title": "Add water",
+                            "comment" : "Add water in a pot and let it boil over high heat",
+                            "duree" : 2880
                         },
                         {
-                            "titre" : "laisser infuser",
-                            "comment" : "éteigner le feu sous la casserole, ajouter le sachet et laisser infuser",
+                            "title" : "Let it infuse",
+                            "comment" : "Turn off the heat of the pot, then put the tea bag inside it and let it infuse on its own",
                             "duree" : 180,
                             "température" : [90, 95]
                         }
                     ]
                 },
                 {
-                    "title": "thé blanc",
-                    "comment" : "Le thé blanc est un thé légérement oxydé (environ 12% d'oxydation), il est généralement vendu assez cher et réputé pour ses vertus diététiques. Son temps d'infusion est long.",
-                    "taches": [
+                    "title": "White tea",
+                    "comment" : "White tea is a tea that has been slightly oxidized (approximately 12% of oxydation). This tea is usually quite expensive and is known for its diet benefits. His steeping time is long.",
+                    "tasks": [
                         {
-                        "titre": "ajouter de l'eau",
-                        "comment" : "ajouter de l'eau dans la casserole et laisser bouillir à feu fort",
-                        "duree" : 2880
+                            "title": "Add water",
+                            "comment" : "Add water in a pot and let it boil over high heat",
+                            "duree" : 2880
                         },
                         {
-                            "titre" : "laisser infuser",
-                            "comment" : "éteigner le feu sous la casserole, ajouter le sachet et laisser infuser",
+                            "title" : "Let it infuse",
+                            "comment" : "Turn off the heat of the pot, then put the tea bag inside it and let it infuse on its own",
                             "duree" : [420, 1200],
                             "température" : 85
                         }
@@ -88,41 +56,151 @@
                 },
                 {
                     "title": "Rooibos",
-                    "comment" : "Le rooibos est un thé d'Afrique du Sud qui ne contient pas de théine, il est réputé pour ses vertus sur la digestion, le sommeil, les allergies. Son temps d'infusion est moyen.",
-                    "taches": [
+                    "comment" : "Rooibos is a tea that comes from the South of Africa, that does not contain theine. He is known for its benefits on one's digestion, sleep or allergies. His steeping time is average.",
+                    "tasks": [
                         {
-                        "titre": "ajouter de l'eau",
-                        "comment" : "ajouter de l'eau dans la casserole et laisser bouillir à feu fort",
-                        "duree" : 2880
+                            "title": "Add water",
+                            "comment" : "Add water in a pot and let it boil over high heat",
+                            "duree" : 2880
                         },
                         {
-                            "titre" : "laisser infuser",
-                            "comment" : "éteigner le feu sous la casserole, ajouter le sachet et laisser infuser",
+                            "title" : "Let it infuse",
+                            "comment" : "Turn off the heat of the pot, then put the tea bag inside it and let it infuse on its own.",
                             "duree" : 300,
                             "température" : [90, 95]
                         }
-                    ] 
+                    ]
                 },
                 {
                     "title": "Oolong",
-                    "comment" : "Le thé oolong est un thé dont l'oxydation est incomplète mais varie selon les thés (de 10 à 80% d'oxydation), il se situe donc entre le thé noir et le thé vert. Son temps d'infusion est moyen.",
-                    "taches": [
+                    "comment" : "Oolong tea is a tea which its oxydation is incomplete but it varies depending on the tea (from 10 to 80% of oxydation). It is between the black tea and the green one. His steeping time is average.",
+                    "tasks": [
                         {
-                        "titre": "ajouter de l'eau",
-                        "comment" : "ajouter de l'eau dans la casserole et laisser bouillir à feu fort",
-                        "duree" : 2880
+                            "title": "Add water",
+                            "comment" : "Add water in a pot and let it boil over high heat",
+                            "duree" : 2880
                         },
                         {
-                            "titre" : "laisser infuser",
-                            "comment" : "éteigner le feu sous la casserole, ajouter le sachet et laisser infuser",
+                            "title" : "Let it infuse",
+                            "comment" : "Turn off the heat of the pot, then put the tea bag inside it and let it infuse on its own",
                             "duree" : [300, 420],
                             "température" : 85
                         }
-                    ] 
+                    ]
                 }
+            ]
+        }
+    ,
+
+
+        {
+            "title": "Eggs",
+            "type": [
+                {
+                    "title": "Hard-boiled egg",
+                    "comment": "Hard-boiled egg, white and yolk are coagulated",
+                    "tasks": [
+                        {
+                            "title": "To boil the water",
+                            "comment": "",
+                            "duree": 120
+                        },
+                        {
+                            "title": "Gently dip the egg with a spoon or fork",
+                            "comment": "",
+                            "duree": 10
+                        },
+                        {
+                            "title": "Count about 10 minutes of cooking before leaving the water",
+                            "comment": "",
+                            "duree": 600
+                        },
+                        {
+                            "title": "Place the egg in cold water to cool it",
+                            "comment": "",
+                            "duree": 15
+                        },
+                        {
+                            "title": "Peel the eggs in cold water (easier)",
+                            "comment": "",
+                            "duree": 120
+                        },
+                        {
+                            "title" : "Taste!",
+                            "comment": "Enjoy your meal",
+                            "duree": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Boiled egg",
+                    "comment": "The white is barely coagulated and the yolk remains liquid",
+                    "tasks": [
+                        {
+                            "title": "To boil the water",
+                            "comment": "",
+                            "duree": 120
+                        },
+                        {
+                            "title": "Gently dip the egg with a spoon or fork",
+                            "comment": "",
+                            "duree": 10
+                        },
+                        {
+                            "title": "Count about 3 minutes of cooking before leaving the water",
+                            "comment": "",
+                            "duree": 180
+                        },
+                        {
+                            "title": "Peel or tap the top egg, salt, pepper",
+                            "comment": "",
+                            "duree": 120
+                        },
+                        {
+                            "title" : "Taste!",
+                            "comment": "Enjoy your meal",
+                            "duree": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "The soft-boiled egg",
+                    "comment": "The white is coagulated and the yolk remains runny, creamy",
+                    "tasks": [
+                        {
+                            "title": "To boil the water",
+                            "comment": "",
+                            "duree": 120
+                        },
+                        {
+                            "title": "Gently dip the egg with a spoon or fork",
+                            "comment": "",
+                            "duree": 10
+                        },
+                        {
+                            "title": "Count about 5 minutes 45 sec of cooking before leaving the water",
+                            "comment": "",
+                            "duree": 345
+                        },
+                        {
+                            "title": "Put the egg in water cold to stop the cooking",
+                            "comment": "",
+                            "duree": 60
+                        },
+                        {
+                            "title" : "Peel the eggs in cold water (easier)",
+                            "comment": "",
+                            "duree": 120
+                        },
+                        {
+                            "title" : "Taste!",
+                            "comment": "Enjoy your meal",
+                            "duree": 0
+                        }
+                    ]
+                }
+
             ]
         }
     ]
 }
-
-
