@@ -2,7 +2,12 @@
 	import Header from './components/Header.svelte';
 </script>
 
-<Header></Header>6
+<Header></Header>
 <main>
-	<!-- MAIN -->
+	<div>
+		<p class="title">Egg'n Tea Timer</p>
+		<p>Make yourself a Tea or an Egg very easily with our instructions</p>
+		<Routes/>
+		<Footer/>
+	</div>
 </main>

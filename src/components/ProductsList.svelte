@@ -3,8 +3,7 @@
 </script>
 
 
-<div class="subProduct">
-	
+<div class="subProduct">	
 	<Product name="undefined" desc="undefined"></Product>
 </div>
 
