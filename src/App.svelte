@@ -3,3 +3,6 @@
 </script>
 
 <Header></Header>
+<main>
+	<!-- MAIN -->
+</main>
