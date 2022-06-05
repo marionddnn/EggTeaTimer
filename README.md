@@ -1,6 +1,6 @@
 # EggTeaTimer - Projet Svelte 
 
-Membres du groupe :  Marion Dieudonné, Maria guy de Fontgalland, Lucas Sabathe, Emilie Moinet
+Membres du groupe :  Marion Dieudonné, Maria Guy De Fontgalland, Lucas Sabathe, Emilie Moinet
 
 ## Pour faire tourner le projet ...
 
