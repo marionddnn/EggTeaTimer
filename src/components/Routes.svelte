@@ -10,7 +10,7 @@
   <Router url="{url}">
       <div>
         <Route path="product/:id" component="{Product}" />
-        <Route path="products/:type" component="{ProductsList}" />
+        <Route path="products/:type" let:params component="{ProductsList}" />
         <Route path="/" component="{Products}"/>
       </div>
   </Router>

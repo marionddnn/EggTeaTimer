@@ -1,5 +1,5 @@
 {
-    "categories": 
+    "categories":
     [
         {
             "title": "Tea",
@@ -93,7 +93,7 @@
         }
     ,
         {
-            "title": "Eggs",
+            "title": "Egg",
             "type": [
                 {
                     "title": "Hard-boiled egg",

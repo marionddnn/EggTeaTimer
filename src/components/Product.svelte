@@ -1,16 +1,17 @@
 <script>
-    export let name;
-	export let desc;
+    export let item;
+    console.log(item);
+
 </script>
 
 <img src="image.png" alt=""/>
 <div>
-	<h2>{name}</h2>
-	<p>{desc}</p>
+	<p></p>
+	<h2>item</h2>
+
 </div>
 
 
 <style>
 
 </style>
-    
