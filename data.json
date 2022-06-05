@@ -5,6 +5,7 @@
             "title": "Tea",
             "type": [
                 {
+                    "id": 1,
                     "title": "Black tea",
                     "comment" : "Black tea is green tea that has been oxidized, therefore he contains more theine. His steeping time is quite short.",
                     "tasks": [
@@ -22,6 +23,7 @@
                     ]
                 },
                 {
+                    "id": 2,
                     "title": "Green tea",
                     "comment" : "Green tea is a tea that haven't been oxidized. He got some health benefits and his steeping time is quite short.",
                     "tasks": [
@@ -39,6 +41,7 @@
                     ]
                 },
                 {
+                    "id": 3,
                     "title": "White tea",
                     "comment" : "White tea is a tea that has been slightly oxidized (approximately 12% of oxydation). This tea is usually quite expensive and is known for its diet benefits. His steeping time is long.",
                     "tasks": [
@@ -56,6 +59,7 @@
                     ]
                 },
                 {
+                    "id": 4,
                     "title": "Rooibos",
                     "comment" : "Rooibos is a tea that comes from the South of Africa, that does not contain theine. He is known for its benefits on one's digestion, sleep or allergies. His steeping time is average.",
                     "tasks": [
@@ -73,6 +77,7 @@
                     ]
                 },
                 {
+                    "id": 5,
                     "title": "Oolong",
                     "comment" : "Oolong tea is a tea which its oxydation is incomplete but it varies depending on the tea (from 10 to 80% of oxydation). It is between the black tea and the green one. His steeping time is average.",
                     "tasks": [
@@ -96,6 +101,7 @@
             "title": "Eggs",
             "type": [
                 {
+                    "id": 5,
                     "title": "Hard-boiled egg",
                     "comment": "Hard-boiled egg, white and yolk are coagulated",
                     "tasks": [
@@ -132,6 +138,7 @@
                     ]
                 },
                 {
+                    "id": 6,
                     "title": "Boiled egg",
                     "comment": "The white is barely coagulated and the yolk remains liquid",
                     "tasks": [
@@ -163,6 +170,7 @@
                     ]
                 },
                 {
+                    "id": 7,
                     "title": "The soft-boiled egg",
                     "comment": "The white is coagulated and the yolk remains runny, creamy",
                     "tasks": [
