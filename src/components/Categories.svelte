@@ -2,7 +2,6 @@
     import {link} from "svelte-routing";
     import json from '../../data.json';
     import {onDestroy, onMount} from "svelte";
-    import Product from "./Product.svelte";
     import { navigate } from "svelte-routing";
     import { Link } from "svelte-routing";
 
@@ -18,7 +17,7 @@
     }
 
     let api = [];
-    let baseUrl = "/products/";
+    let baseUrl = "/recipes/";
     onMount(async () => {
         await fetch('http://localhost:8081/').then(r => r.json()).then(data => {
              api = JSON.parse(JSON.stringify(data));
@@ -26,11 +25,6 @@
              console.log(api);
         });
     })
-
-
-    function handleClick() {
-        console.log("toto");
-    }
 
 
 

@@ -12,11 +12,9 @@ app.get("/", (req, res) => {
     res.send(data);
 });
 
-app.get("/products/:type", (req, res) => {
-
+app.get("/recipes/:type", (req, res) => {
     let dataJson = Object.values(dataParsed);
     let array = dataJson.find(item=>item);
-    //console.log(array.find(item => item.title === req.params.type));
     let result = array.find(item => item.title === req.params.type);
     //console.log(dataJson.categories.find(item => item.title === req.params.type));
     res.send(result);
