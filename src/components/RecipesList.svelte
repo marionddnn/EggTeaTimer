@@ -12,7 +12,7 @@
 			datas = Object.values(JSON.parse(JSON.stringify(data)));
 		});
 	})
-	
+
 </script>
 
 <div class="subProduct">
@@ -28,7 +28,6 @@
 						<p> {info.title} </p>
 					</a>
 					<p> {info.comment} </p>
-
 				{/if}
 			
 			{/each}
