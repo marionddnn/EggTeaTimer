@@ -43,6 +43,12 @@
 </div>
 
 <style>
+
+h2 {
+		display: block;
+        margin-left: 500px;
+	}
+
 	.recipe_step{
 		/*padding: 10px;
 		 width: fit-content;
