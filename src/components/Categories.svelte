@@ -1,6 +1,6 @@
 <script>
     import { link } from "svelte-routing";
-    import json from '../data.json';
+    import json from '../../data.json';
     let list = JSON.parse(JSON.stringify(json));
     const types = [];
     for(const category of list.categories){

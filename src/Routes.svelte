@@ -1,7 +1,7 @@
 <script>
     import { Router, Route } from "svelte-routing";
     import Recipe from "./components/Recipe.svelte";
-    import Categories from "./Categories.svelte";
+    import Categories from "./components/Categories.svelte";
     import RecipesList from "./components/RecipesList.svelte";
     export let url = "";
 </script>
