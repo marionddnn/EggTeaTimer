@@ -1,5 +1,5 @@
 {
-    "categories": 
+    "categories":
     [
         {
             "title": "Tea",
@@ -98,7 +98,7 @@
         }
     ,
         {
-            "title": "Eggs",
+            "title": "Egg",
             "type": [
                 {
                     "id": 5,
