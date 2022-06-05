@@ -3,7 +3,7 @@
 </script>
 
 <footer>
-	<p> Groupe project : Marion Dieudonné, Maria Guy de FontGalland, Lucas Sabatte, Emilie Moinet </p>
+	<p> Groupe project : Marion Dieudonné, Maria guy de FontGalland, Lucas Sabathe, Emilie Moinet </p>
 </footer>
 
 
