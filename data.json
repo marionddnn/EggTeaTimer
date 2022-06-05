@@ -10,14 +10,14 @@
                     "comment" : "Black tea is green tea that has been oxidized, therefore he contains more theine. His steeping time is quite short.",
                     "tasks": [
                         {
-                            "titre": "Add water",
+                            "step": "Add water",
                             "comment" : "Add water in a pot and let it boil over high heat",
-                            "duree" : 2880
+                            "duree" : 30
                         },
                         {
-                            "titre" : "Let it infuse",
+                            "step" : "Let it infuse",
                             "comment" : "Turn off the heat of the pot, then put the tea bag inside it and let it infuse on its own",
-                            "duree" : 240,
+                            "duree" : 12,
                             "température" : 70
                         }
                     ]
@@ -28,14 +28,14 @@
                     "comment" : "Green tea is a tea that haven't been oxidized. He got some health benefits and his steeping time is quite short.",
                     "tasks": [
                         {
-                            "title": "Add water",
+                            "step": "Add water",
                             "comment" : "Add water in a pot and let it boil over high heat",
-                            "duree" : 2880
+                            "duree" : 30
                         },
                         {
-                            "title" : "Let it infuse",
+                            "step" : "Let it infuse",
                             "comment" : "Turn off the heat of the pot, then put the tea bag inside it and let it infuse on its own",
-                            "duree" : 180,
+                            "duree" : 9,
                             "température" : [90, 95]
                         }
                     ]
@@ -46,14 +46,14 @@
                     "comment" : "White tea is a tea that has been slightly oxidized (approximately 12% of oxydation). This tea is usually quite expensive and is known for its diet benefits. His steeping time is long.",
                     "tasks": [
                         {
-                            "title": "Add water",
+                            "step": "Add water",
                             "comment" : "Add water in a pot and let it boil over high heat",
-                            "duree" : 2880
+                            "duree" : 30
                         },
                         {
-                            "title" : "Let it infuse",
+                            "step" : "Let it infuse",
                             "comment" : "Turn off the heat of the pot, then put the tea bag inside it and let it infuse on its own",
-                            "duree" : [420, 1200],
+                            "duree" : [21, 60],
                             "température" : 85
                         }
                     ]
@@ -64,14 +64,14 @@
                     "comment" : "Rooibos is a tea that comes from the South of Africa, that does not contain theine. He is known for its benefits on one's digestion, sleep or allergies. His steeping time is average.",
                     "tasks": [
                         {
-                            "title": "Add water",
+                            "step": "Add water",
                             "comment" : "Add water in a pot and let it boil over high heat",
-                            "duree" : 2880
+                            "duree" : 30
                         },
                         {
-                            "title" : "Let it infuse",
+                            "step" : "Let it infuse",
                             "comment" : "Turn off the heat of the pot, then put the tea bag inside it and let it infuse on its own.",
-                            "duree" : 300,
+                            "duree" : 15,
                             "température" : [90, 95]
                         }
                     ]
@@ -82,14 +82,14 @@
                     "comment" : "Oolong tea is a tea which its oxydation is incomplete but it varies depending on the tea (from 10 to 80% of oxydation). It is between the black tea and the green one. His steeping time is average.",
                     "tasks": [
                         {
-                            "title": "Add water",
+                            "step": "Add water",
                             "comment" : "Add water in a pot and let it boil over high heat",
-                            "duree" : 2880
+                            "duree" : 30
                         },
                         {
-                            "title" : "Let it infuse",
+                            "step" : "Let it infuse",
                             "comment" : "Turn off the heat of the pot, then put the tea bag inside it and let it infuse on its own",
-                            "duree" : [300, 420],
+                            "duree" : [15, 21],
                             "température" : 85
                         }
                     ]
@@ -106,32 +106,32 @@
                     "comment": "Hard-boiled egg, white and yolk are coagulated",
                     "tasks": [
                         {
-                            "title": "To boil the water",
+                            "step": "To boil the water",
                             "comment": "",
                             "duree": 120
                         },
                         {
-                            "title": "Gently dip the egg with a spoon or fork",
+                            "step": "Gently dip the egg with a spoon or fork",
                             "comment": "",
                             "duree": 10
                         },
                         {
-                            "title": "Count about 10 minutes of cooking before leaving the water",
+                            "step": "Count about 10 minutes of cooking before leaving the water",
                             "comment": "",
                             "duree": 600
                         },
                         {
-                            "title": "Place the egg in cold water to cool it",
+                            "step": "Place the egg in cold water to cool it",
                             "comment": "",
                             "duree": 15
                         },
                         {
-                            "title": "Peel the eggs in cold water (easier)",
+                            "step": "Peel the eggs in cold water (easier)",
                             "comment": "",
                             "duree": 120
                         },
                         {
-                            "title" : "Taste!",
+                            "step" : "Taste!",
                             "comment": "Enjoy your meal",
                             "duree": 0
                         }
@@ -143,27 +143,27 @@
                     "comment": "The white is barely coagulated and the yolk remains liquid",
                     "tasks": [
                         {
-                            "title": "To boil the water",
+                            "step": "To boil the water",
                             "comment": "",
-                            "duree": 120
+                            "duree": 30
                         },
                         {
-                            "title": "Gently dip the egg with a spoon or fork",
+                            "step": "Gently dip the egg with a spoon or fork",
                             "comment": "",
-                            "duree": 10
+                            "duree": 1
                         },
                         {
-                            "title": "Count about 3 minutes of cooking before leaving the water",
+                            "step": "Count about 3 minutes of cooking before leaving the water",
                             "comment": "",
-                            "duree": 180
+                            "duree": 9
                         },
                         {
-                            "title": "Peel or tap the top egg, salt, pepper",
+                            "step": "Peel or tap the top egg, salt, pepper",
                             "comment": "",
-                            "duree": 120
+                            "duree": 6
                         },
                         {
-                            "title" : "Taste!",
+                            "step" : "Taste!",
                             "comment": "Enjoy your meal",
                             "duree": 0
                         }
@@ -175,32 +175,32 @@
                     "comment": "The white is coagulated and the yolk remains runny, creamy",
                     "tasks": [
                         {
-                            "title": "To boil the water",
+                            "step": "To boil the water",
                             "comment": "",
-                            "duree": 120
+                            "duree": 30
                         },
                         {
-                            "title": "Gently dip the egg with a spoon or fork",
+                            "step": "Gently dip the egg with a spoon or fork",
                             "comment": "",
-                            "duree": 10
+                            "duree": 1
                         },
                         {
-                            "title": "Count about 5 minutes 45 sec of cooking before leaving the water",
+                            "step": "Count about 5 minutes 45 sec of cooking before leaving the water",
                             "comment": "",
-                            "duree": 345
+                            "duree": 17
                         },
                         {
-                            "title": "Put the egg in water cold to stop the cooking",
+                            "step": "Put the egg in water cold to stop the cooking",
                             "comment": "",
-                            "duree": 60
+                            "duree": 3
                         },
                         {
-                            "title" : "Peel the eggs in cold water (easier)",
+                            "step" : "Peel the eggs in cold water (easier)",
                             "comment": "",
-                            "duree": 120
+                            "duree": 6
                         },
                         {
-                            "title" : "Taste!",
+                            "step" : "Taste!",
                             "comment": "Enjoy your meal",
                             "duree": 0
                         }

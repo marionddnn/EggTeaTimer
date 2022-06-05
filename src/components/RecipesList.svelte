@@ -1,43 +1,38 @@
 <script>
 	import Recipe from "./Recipe.svelte";
+	import {link} from "svelte-routing";
 	import {onMount} from "svelte";
 
-	let api = [];
 	let datas = [];
 	let urlType = window.location.pathname.split("/").pop();
+	let baseUrl = "/recipe/";
 
 	onMount(async () => {
 		await fetch('http://localhost:8081/recipes/'+urlType).then(r => r.json()).then(data => {
-			api = Object.values(JSON.parse(JSON.stringify(data)));
-			//datas = api[1].map(item => Object.values(item));
-			//console.log(datas);
+			datas = Object.values(JSON.parse(JSON.stringify(data)));
 		});
 	})
+	
 </script>
-
 
 <div class="subProduct">
 	
-	<p> {api[0]} </p>
+	<p> {datas[0]} </p>
 
-
-		{#each api as recipe }
+		{#each datas as recipe }
 
 			{#each Object.values(recipe) as info}
 
-			{#if info.id}
-				
-				<p> {info.title} </p>
-				<p> {info.comment} </p>
+				{#if info.id}
+					<a use:link href={baseUrl + urlType + "/" +info.id}>
+						<p> {info.title} </p>
+					</a>
+					<p> {info.comment} </p>
 
-			{/if}
+				{/if}
 			
 			{/each}
 
-
 		{/each} 
-
-	
-
 
 </div>
