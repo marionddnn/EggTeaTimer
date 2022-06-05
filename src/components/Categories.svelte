@@ -21,8 +21,6 @@
     onMount(async () => {
         await fetch('http://localhost:8081/').then(r => r.json()).then(data => {
              api = JSON.parse(JSON.stringify(data));
-             //api = data;
-             //console.log(api);
         });
     })
 
