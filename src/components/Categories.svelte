@@ -22,7 +22,7 @@
         await fetch('http://localhost:8081/').then(r => r.json()).then(data => {
              api = JSON.parse(JSON.stringify(data));
              //api = data;
-             console.log(api);
+             //console.log(api);
         });
     })
 
@@ -35,11 +35,11 @@
 <div class="products">
     <div>
         <p> Categories : </p>
-        {#each types as type}
+       <!--{#each types as type}
         <a use:link href={type.url} on:click={handleClick}>
             {type.name}
         </a>
-        {/each}
+        {/each} -->
 
 
         {#each  Object.values(api) as item }
