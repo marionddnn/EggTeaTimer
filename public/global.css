@@ -59,6 +59,10 @@ main {
     width: 278px;
 }
 
+.timer p {
+    display : inline;
+}
+
 
 /*CATEGORIES COMPONENT */
 .products {
