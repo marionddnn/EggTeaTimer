@@ -69,6 +69,10 @@ main {
     text-align: center;
 }
 
+.img_products {
+    width: 22px;
+}
+
 /*RECIPE COMPONENT*/
 #recipe_container{
     background: #d8f6e8;
@@ -93,6 +97,49 @@ main {
     margin-right: 12px;
 }
 
+
+/*RECIPE LIST*/
+.subProduct {
+    padding-top: 15px;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+.subProduct a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.datas {
+    font-size: 30px;
+    color: #04543f;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.titleProduct {
+    font-size: 25px;
+    color: black;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    margin : 0;
+}
+.comment {
+    color: black;
+    display: flex;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 15px;
+    margin: 15px;
+}
 
 /*FOOTER COMPONENT*/
 footer {
