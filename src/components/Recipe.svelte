@@ -14,7 +14,9 @@
 	let timers = [{ step: "", time: 0, id: '123' }];
 
 	function handleClick(step, time) {
-		deleteTimer(timers[0].id);
+		if (timers.length > 0) {
+			deleteTimer(timers[0].id);
+		}
 		timers = [...timers, {
 			step: step,
 			time: time,
