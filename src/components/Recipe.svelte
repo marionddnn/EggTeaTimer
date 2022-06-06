@@ -27,9 +27,6 @@
 	function deleteTimer(id) {
 		timers = timers.filter(t => t.id !== id);
 	}
-	function handleOut(e) {
-		console.log(e);
-	}
 </script>
 
 <div id="recipe_container">
@@ -59,7 +56,10 @@
 									<p> {i.temperature} °C </p>
 								{/if}
 							</div>
-							<button class="bg-transparent border-0" on:click="{handleClick(i.step, i.duree)}"><i class="far fa-play-circle fa-3x"></i></button>
+							<button class="bg-transparent border-0" on:click="{handleClick(i.step, i.duree[0] ? i.duree[0] : i.duree)}">
+								<i class="far fa-play-circle fa-3x"></i>
+								<span class="sr-only"> Launch timer for this step </span>
+							</button>
 						</div>
 					{/if}
 				{/if}

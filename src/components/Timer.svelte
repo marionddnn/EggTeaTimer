@@ -36,11 +36,11 @@
     });
 </script>
 
-<h3 class="text-brown fw-bold">{step}</h3>
+<h3 class="text-brown fw-bold">{step.length ? step : "Click on a step"}</h3>
 <div class="timer">
     {#each Object.entries({ h, m, s }) as [key, value], i}
         {#if countdown >= 60 ** (2 - i)}
-            <span class="fs-3">{padValue(value)}{key} </span>
+            <p class="fs-3">{padValue(value)}{key} </p>
         {/if}
     {/each}
 </div>
