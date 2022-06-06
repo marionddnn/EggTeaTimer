@@ -1,8 +1,11 @@
 <script>
-    import { onDestroy } from "svelte";
+    import { createEventDispatcher, onDestroy } from "svelte";
 
+    const dispatch = createEventDispatcher();
+
+    export let step;
     export let countdown;
-    export const deleteTimer = () => {};
+    export let deleteTimer = () => {};
 
     let now = Date.now();
     let end = now + countdown * 1000;
@@ -14,6 +17,9 @@
 
     function updateTimer() {
         now = Date.now();
+        if (count === 1) {
+            dispatch('out');
+        }
     }
 
     let interval = setInterval(updateTimer, 1000);
@@ -30,6 +36,7 @@
     });
 </script>
 
+<h3 class="text-brown fw-bold">{step}</h3>
 <div class="timer">
     {#each Object.entries({ h, m, s }) as [key, value], i}
         {#if countdown >= 60 ** (2 - i)}
