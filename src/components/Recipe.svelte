@@ -1,8 +1,4 @@
 <script>
-<<<<<<< HEAD
-	export let name;
-	export let desc;
-=======
 	import {onDestroy, onMount} from "svelte";
 	let paramsUrl = window.location.pathname.split("/", 4);
 	console.log('http://localhost:8081/recipe/'+ paramsUrl[2]+ "/" + paramsUrl[3]);
@@ -13,24 +9,11 @@
 	});
 });
 
->>>>>>> 0581ef18bf4609556a11a6cd3fbc87d0de9f9b99
 </script>
 
 <!-- Pas d'image, englober le tout dans un lien pour pouvoir accéder à la recette après (j'ai ajouté des id aux recettes) -->
 <img src="image.png" alt="" />
 <div>
-<<<<<<< HEAD
-	<h2>{name}</h2>
-	<p>{desc}</p>
-</div>
-
-<style>
-	h2 {
-		display: block;
-        margin-left: 500px;
-	}
-</style>
-=======
 	<h2>{datas.title}</h2>
 	<p>{datas.comment}</p>
 	<h3> Recipe </h3>
@@ -51,4 +34,3 @@
 		{/each}
 	{/each}
 </div>
->>>>>>> 0581ef18bf4609556a11a6cd3fbc87d0de9f9b99
