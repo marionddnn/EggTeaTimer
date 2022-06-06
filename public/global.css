@@ -31,8 +31,14 @@ main {
 
 /*RECIPE LIST COMPONENT*/
 .subProduct {
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: column;
+}
+.subProduct a {
+    background: #fbe1b5;
+    border-radius: 33px;
+    padding: 10px;
+    margin: 13px auto;
 }
 .datas {
     font-size: 30px;
@@ -50,6 +56,7 @@ main {
     display: flex;
     color: darkgray;
     font-size: 15px;
+    width: 278px;
 }
 
 
@@ -67,10 +74,13 @@ main {
     text-decoration: none;
     color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .img_products {
-    width: 22px;
+    width: 27px;
+    margin-right: 8px;
 }
 
 /*RECIPE COMPONENT*/
@@ -78,10 +88,14 @@ main {
     background: #d8f6e8;
     padding: 34px 32px;
 }
+
+#recipe_container h2 {
+    margin: 0;
+}
 .recipe_step{
     box-shadow: #8bb8a7 2px 2px 7px;
     padding: 22px 20px;
-    background-color: white;
+    background-color: white !important;
     border-radius: 10px;
     margin: 10px 0;
     width: 671px;
@@ -99,22 +113,13 @@ main {
 
 
 /*RECIPE LIST*/
-.subProduct {
-    padding-top: 15px;
-    height: 200px;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    left: 0;
-    right: 0;
-    justify-content: center;
-}
 .subProduct a {
     text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    width: fit-content;
 }
 .datas {
     font-size: 30px;
@@ -144,7 +149,7 @@ main {
 /*FOOTER COMPONENT*/
 footer {
     background: #05543e;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     padding-top: 20px;
