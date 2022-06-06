@@ -64,14 +64,45 @@ main {
 .products {
     display: flex;
     justify-content: center;
+    background-color: #d8f6e8;
+    padding: 10rem;
 }
+
+i{
+    padding : 1rem;
+}
+
+i:hover {
+    color : #04543f;
+    transition : color 0.2s;
+}
+
+button:focus i {
+    background-color : #05543e;
+    color : #fff;
+}
+
+header a,
+.products a {
+    text-decoration: none;
+    color: #27302e;
+}
+
+header a:hover{
+    color : #04543f ;
+}
+
+a:focus,
+button:focus {
+    outline : thick double #27302e;
+}
+
 .products a {
     background-color: #04543f;
     border-radius: 20%;
     padding: 18px;
     margin: 10px;
     font-size: 23px;
-    text-decoration: none;
     color: white;
     text-align: center;
     display: flex;

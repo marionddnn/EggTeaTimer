@@ -1,4 +1,6 @@
 <header class="text-center">
-    <h1 class="text-green title fw-bold">Egg’n Tea Timer</h1>
-    <h4>Make yourself a Tea or an Egg very easily with our instructions</h4>
+    <a href="/">
+        <h1 class="text-green title fw-bold">Egg’n Tea Timer</h1>
+        <p>Make yourself a Tea or an Egg very easily with our instructions</p>
+    </a>
 </header>

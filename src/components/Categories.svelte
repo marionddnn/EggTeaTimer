@@ -16,7 +16,7 @@
     {#each  Object.values(api) as item}
         {#each  item as category }
         <a use:link href={baseUrl+category.title}>
-            <img class="img_products" src={imgNames[category.title]} alt="product" />
+            <img class="img_products" src={imgNames[category.title]} alt="" />
             {category.title}
         </a>
         {/each}
