@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Rubik', sans-serif !important;
+    margin: 0;
 }
 
 .title {font-family: 'K2D', sans-serif;}
@@ -11,10 +12,16 @@ body {
 .text-brown {color: #4D2B0D;}
 .text-lightbrown {color: #FAE1B5;}
 
+/*HEADER COMPONENT*/
+header {
+    padding: 17px;
+}
+header h4 {
+    margin: 0;
+}
+
 main {
-    padding: 1em;
     max-width: 240px;
-    margin: 0 auto;
 }
 
 @media (min-width: 640px) {
@@ -23,7 +30,87 @@ main {
     }
 }
 
+/*RECIPE LIST COMPONENT*/
 .subProduct {
     display:flex;
     flex-direction:row;
+}
+.datas {
+    font-size: 30px;
+    color: #04543f;
+    display: flex;
+    padding-left: 3px;
+    padding-bottom: 5px;
+}
+.titleProduct {
+    font-size: 25px;
+    color: black;
+    display: flex;
+}
+.comment {
+    display: flex;
+    color: darkgray;
+    font-size: 15px;
+}
+
+
+/*CATEGORIES COMPONENT */
+.products {
+    display: flex;
+    justify-content: center;
+}
+.products a {
+    background-color: #04543f;
+    border-radius: 20%;
+    padding: 18px;
+    margin: 10px;
+    font-size: 23px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/*RECIPE COMPONENT*/
+#recipe_container{
+    background: #d8f6e8;
+    padding: 34px 32px;
+}
+.recipe_step{
+    box-shadow: #8bb8a7 2px 2px 7px;
+    padding: 22px 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 671px;
+}
+.recipeStep_name {
+    font-weight: bold;
+    font-family: Arial;
+}
+.recipeStep_time{
+    display: flex;
+}
+.timer_icon {
+    margin-right: 12px;
+}
+
+
+/*FOOTER COMPONENT*/
+footer {
+    background: #05543e;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    height: 50px;
+    color: white;
+    margin: 0;
+}
+footer p {
+    text-align: center;
+    height: 100%;
+    max-width: 1280px;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
 }
