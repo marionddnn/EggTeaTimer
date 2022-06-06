@@ -1,37 +1,64 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,200" />
 <script>
 	import {onMount} from "svelte";
+	import Timer from './Timer.svelte';
+
 	let paramsUrl = window.location.pathname.split("/", 4);
 	let datas = [];
 	onMount(async () => {
 		await fetch('http://localhost:8081/recipe/'+ paramsUrl[2]+ "/" + paramsUrl[3]).then(r => r.json()).then(r => {
 			datas = r;
+		});
 	});
-});
+
+	var countdown = 0;
+	let timers = [{ time: 0, id: '123' }];
+
+	function handleClick(time) {
+		deleteTimer(timers[0].id);
+		countdown = time;
+		handleStartTimer();
+	}
+
+	function handleStartTimer() {
+		timers = [...timers, {
+			time: countdown,
+			id: new Date().toISOString(),
+		}];
+	}
+	function deleteTimer(id) {
+		timers = timers.filter(t => t.id !== id);
+	}
 </script>
 
-<!-- Pas d'image, englober le tout dans un lien pour pouvoir accéder à la recette après (j'ai ajouté des id aux recettes) -->
-<img src="image.png" alt="" />
 <div id="recipe_container">
 	<h2>{datas.title}</h2>
 	<p>{datas.comment}</p>
-	<h3> Recipe </h3>
+	<div class="timer">
+		{#each timers as timer (timer.id)}
+			<Timer countdown={timer.time} deleteTimer={() => deleteTimer(timer.id)} />
+		{/each}
+	</div>
+	<h3>Recipe :</h3>
 	<div id="recipe">
 		{#each Object.values(datas) as item }
 			{#each Object.values(item) as i}
 				{#if i.step}
-					<div class="recipe_step">
+					<div class="recipe_step d-flex justify-content-between align-items-center">
 						{#if i.step !== undefined}
-							<p class="recipeStep_name"> {i.step} </p>
-							<p class="recipeStep_comment"> {i.comment} </p>
-							{#if typeof i.duree ===  "number"}
-								<p class="recipeStep_time">  <span class="timer_icon material-symbols-outlined">timer</span>{i.duree / 60 } minutes </p>
-							{:else}
-								<p class="recipeStep_time"> <span class="timer_icon material-symbols-outlined">timer</span> Between {i.duree[0] / 60} minutes and {i.duree[1] / 60} minutes </p>
-							{/if}
-							{#if i.temperature}
-								<p> {i.temperature} °C </p>
-							{/if}
+							<div class="w-75">
+								<p class="recipeStep_name"> {i.step} </p>
+								<p class="recipeStep_comment"> {i.comment} </p>
+								{#if typeof i.duree ===  "number"}
+									<p class="recipeStep_time"><span class="timer_icon material-symbols-outlined">timer</span>{i.duree / 60 } minutes </p>
+								{:else}
+									<p class="recipeStep_time"><span class="timer_icon material-symbols-outlined">timer</span> Between {i.duree[0] / 60} minutes and {i.duree[1] / 60} minutes </p>
+								{/if}
+								{#if i.temperature}
+									<p> {i.temperature} °C </p>
+								{/if}
+							</div>
+							<button class="bg-transparent border-0" on:click="{handleClick(i.duree)}"><i class="far fa-play-circle fa-3x"></i></button>
 						{/if}
 					</div>
 				{/if}
