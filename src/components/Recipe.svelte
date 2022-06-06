@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,200" />
 <script>
 	import {onDestroy, onMount} from "svelte";
 	let paramsUrl = window.location.pathname.split("/", 4);
@@ -17,20 +18,52 @@
 	<h2>{datas.title}</h2>
 	<p>{datas.comment}</p>
 	<h3> Recipe </h3>
-	{#each Object.values(datas) as item }
-		{#each Object.values(item) as i}
-			{#if i.step !== undefined}
-				<p> {i.step} </p>
-				<p> {i.comment} </p>
-				{#if typeof i.duree ===  "number"}
-					<p> {i.duree / 60 } minutes </p>
-				{:else}
-						<p> Between {i.duree[0] / 60} minutes and {i.duree[1] / 60} minutes </p>
+	<div id="recipe">
+		{#each Object.values(datas) as item }
+			{#each Object.values(item) as i}
+				{#if i.step}
+				<div class="recipe_step">
+					{#if i.step !== undefined}
+						<p class="recipeStep_name"> {i.step} </p>
+						<p class="recipeStep_comment"> {i.comment} </p>
+						{#if typeof i.duree ===  "number"}
+							<p class="recipeStep_time">  <span class="timer_icon material-symbols-outlined">timer</span>{i.duree / 60 } minutes </p>
+						{:else}
+							<p class="recipeStep_time"> <span class="timer_icon material-symbols-outlined">timer</span> Between {i.duree[0] / 60} minutes and {i.duree[1] / 60} minutes </p>
+						{/if}
+						{#if i.temperature}
+							<p> {i.temperature} °C </p>
+						{/if}
+					{/if}
+				</div>
 				{/if}
-				{#if i.temperature}
-					<p> {i.temperature} °C </p>
-				{/if}
-			{/if}
+			{/each}
 		{/each}
-	{/each}
+	</div>
 </div>
+
+<style>
+	.recipe_step{
+		/*padding: 10px;
+		 width: fit-content;
+		*/
+		padding: 22px 20px;
+		background-color: #fbe1b5;
+		border-radius: 10px;
+		margin: 10px 0;
+		width: 671px;
+	}
+
+	.recipeStep_name {
+		font-weight: bold;
+		font-family: Arial;
+	}
+
+	.recipeStep_time{
+		display: flex;
+	}
+
+	.timer_icon {
+		margin-right: 12px;
+	}
+</style>
